@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Thomas Barks" />
+  <title>Summary of Draca et al (2010)</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Summary of Draca et al (2010)</h1>
+<h2 class="author">Thomas Barks</h2>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>Draca et al (2011) study the impact of minimum wages on firm profitability, and do so by exploiting the changes induced by the introduction of the National Minimum Wage in 1999 in the United Kingdom. They use pre-policy information on the distribution of wages to conduct a difference-in-differences approach. The main finding of the paper is that higher wages reduce firm profitability, especially in industries with higher market power. They find that this is consistent with the “no behavioural response” model (where increases in wages map directly into a fall in profits). Here I provide a brief summary of how Draca et al (2011) set up their analysis and the main conclusions they found.</p>
+<h1 id="theory">Theory</h1>
+<p>Minimum wages can come about in three ways: (1) National, government legislated (perhaps after consultations with trade unions and employer associations); (2) National, outcome of collective bargaining agreements and extended to all workers and (3) Industry-level minimum resulting from industry-level collective bargaining and extended to all workers in that industry. The NMW introduced in the UK in 1999 takes the form of (1).</p>
+<p>The textbook competitive labour market model is shown in Figure 1. It illustrates that a wage floor reduces employment, as it creates excess supply in the labour market. However, the empirical evidence of this effect is mixed. In light of this, Draca et al (2011) look into a possible reason as to why this is. They put forward that higher wage costs are translated into lower profits (and hence no effect on employment).</p>
+<h1 id="motivation-and-modelling-strategy">Motivation and Modelling Strategy</h1>
+<p>The following model is taken from Ashenfelter and Smith (1979). The introduction of the minimum wage (M) above the prevailing wage (W) reduces profits by:</p>
+<p><br /><span class="math display"><em>Δ</em>∏=∏(<em>W</em>, <em>R</em>, <em>P</em>)−∏(<em>M</em>, <em>R</em>, <em>P</em>)</span><br /></p>
+<p>or</p>
+<p><br /><span class="math display">$$\Delta\prod=-L\Delta W+\frac{1}{2}\frac{\delta L}{\delta W}(\Delta W)^2$$</span><br /></p>
+<p>This can be rewritten as</p>
+<p><br /><span class="math display">$$\Delta\prod=-WL(\frac{\Delta W}{W}+\frac{\eta}{2}(\frac{\Delta W}{W})^2$$</span><br /></p>
+<p>where WL is the wage bill, the first term inside the brackets is the proportionate change in the wage, and the second term is the impact on labour demand. In a situation of no behavioural response (no impact on labour demand) the second order effect is zero, so:</p>
+<p><br /><span class="math display">$$\Delta\prod=-WL\frac{\Delta W}{W}$$</span><br /></p>
+<p>The previous equations show that the lower the initial wage, the greater the fall in profits. The difference-in-difference model defines treatment groups of more affected firms (lower W) and control groups of less affected firms (higher W). The change in profit margin is:</p>
+<p><br /><span class="math display">$$\Delta(\frac{\prod}{S})=-\theta(\frac{\Delta W}{W})$$</span><br /></p>
+<p>In perfect competition, price equals marginal cost, so higher wages translate into higher prices. In oligopoly models higher wages are partly born by firms. The empirical work in the paper distinguishes between industries with different degrees of product market competition (larger effect in less competitive industries).</p>
+<p>Now we turn to the modelling the paper used. T=1 for firms whose pre-policy wage was lower than the minimum wage and T=0 for firms whose pre-policy wage was higher than the minimum wage. NMW=1 pre-policy, NMW=0 post-policy and w=ln(W). The wage impact is hence:</p>
+<p><br /><span class="math display">$$(w_{NMW=1}^{T=1}-\=w_{NMW=0}^{T=1})-(w_{NMW=1}^{T=0}-w_{NMW=0}^{T=0})$$</span><br /></p>
+<p>The regression form is:</p>
+<p><br /><span class="math display"><em>w</em><sub><em>i</em><em>t</em></sub> = <em>α</em><sub>1</sub> + <em>β</em><sub>1</sub><em>X</em><sub><em>i</em><em>t</em></sub> + <em>δ</em><sub>1</sub><em>Y</em><sub><em>t</em></sub> + <em>θ</em><sub>1</sub><em>I</em>(<em>w</em><sub><em>i</em>, <em>t</em> − 1</sub> &lt; <em>m</em><em>w</em><sub><em>t</em></sub>)+<em>ψ</em><sub>1</sub>[<em>I</em>(<em>w</em><sub><em>i</em>, <em>t</em> − 1</sub> &lt; <em>m</em><em>w</em><sub><em>t</em></sub>)<em>N</em><em>M</em><em>W</em><sub><em>t</em></sub>]+<em>ε</em><sub>1<em>i</em><em>t</em></sub></span><br /></p>
+<p><span class="math inline"><em>ψ</em><sub>1</sub></span> shows the estimated impact of the NMW on wages. The profit margin impact is:</p>
+<p><br /><span class="math display">$$[(\frac{\prod}{S})_{NMW=1}^{T=1}-(\frac{\prod}{S})_{NMW=0}^{T=1}]-[(\frac{\prod}{S})_{NMW=1}^{T=0}-(\frac{\prod}{S})_{NMW=0}^{T=0}]$$</span><br /></p>
+<p>The regression form is:</p>
+<p><br /><span class="math display">$$(\frac{\prod}{S})_{it}= \alpha_2+ \beta_2Z_{it}+ \delta_2Y_t+ \theta_2I(w_{i,t-1}&lt;mw_t)+ \psi_2[I(w_{i,t-1}&lt;mw_t)NMW_t]+ \varepsilon_{2it}$$</span><br /></p>
+<p><span class="math inline"><em>ψ</em><sub>2</sub></span> shows the estimated impact of the NMW on profit margins.</p>
+<h1 id="data">Data</h1>
+<p>The paper uses the FAME (Financial Accounting Made Easy) database. This was used as it covers a wider range of companies than standard. This is of particular importance, as smaller firms and non-manufacturing firms are more likely to employ workers whose wages were at or below the minimum wage level. The paper also used the LFS (Labour Force Survey) for control variables and the WERS (Workplace Employment Relations Survey) to construct and validate treatment group indicators. To summarise, FAME was used for the main results and average firm wages, LFS was used for industry-level analysis of entry and exit and WERS was used to see the association between low pay incidence and average wages. T=1: average remuneration &lt;£12,000. The key issue is that wages of firms beneath the threshold have a significant wage boost relative to higher wage firms. This threshold based definition is more effective if sub MW employers are concentrated at the lower end of the wage distribution. Using WERS, the paper found a strong negative relationship between the proportion of workers paid below £3.60 per hour and the establishment average wage per hour. Workplaces with average annual wages less than or equal to £12,000 contain 87 percent of all minimum wage workers, as Figure 2 illustrates.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>The main finding of the paper is that wages were significantly raised and firm profitability was significantly reduced due to the NMW. There was also some evidence of bigger falls in profit margins for industries with higher market power, but no effects on employment or productivity. These findings were found to be consistent with a simple no behavioural response model. In addition, long run adjustment may be through lower rates of entry. A positive of the paper is that it covered an under-studied research question. Furthermore, the models used were relatively straightforward. Also, robustness checks found significant results. However, the authors could not find any data on prices and quality, variables which could also change due to the NMW. In addition, there was limited information on the within-firm distribution of workers in sectors besides care homes. Lastly, the paper could have perhaps explained how the government decided on the value of the NMW.</p>
+<div class="figure">
+<img src="NC" alt="Competitive Labour Market" />
+<p class="caption">Competitive Labour Market</p>
+</div>
+<div class="figure">
+<img src="NC1" alt="Wage Distribution" />
+<p class="caption">Wage Distribution</p>
+</div>
+</body>
+</html>
